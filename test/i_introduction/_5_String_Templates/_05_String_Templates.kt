@@ -16,5 +16,7 @@ class _05_String_Templates() {
 
     @Test fun doNotMatch() {
         assertFalse("24 RRR 1957".matches(task5().toRegex()))
+        assertFalse("24AUG1957".matches(task5().toRegex()))
+        assertFalse("24   AUG     1957".matches(task5().toRegex()))
     }
 }
