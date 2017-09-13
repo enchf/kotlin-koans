@@ -21,4 +21,4 @@ fun Shop.hasCustomerFrom(city: City) = customers.any { it.isFrom(city) }
 
 fun Shop.countCustomersFrom(city: City) = customers.count { it.isFrom(city) }
 
-fun Shop.findAnyCustomerFrom(city: City) = customers.firstOrNull { it.isFrom(city) }
+fun Shop.findFirstCustomerFrom(city: City) = customers.firstOrNull { it.isFrom(city) }
